@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    background-color: #171717;
+    background: linear-gradient(90deg, #342e2c 0%, #000 100%);
+}
+#main_box{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+@keyframes nav_bar_hidden_anim {
+    from{left: -200px}
+    to{left: 0;}
+}
+@keyframes nav_bar_for_burger_anim {
+    from{left: -200px}
+    to{left: 0;}
+}
+.nav_bar_hidden{
+    animation: nav_bar_for_burger_anim 1000ms !important;
+}
+@keyframes nav_bar_to_back_anim {
+    from{left: 0px}
+    to{left: -200px}
+}
+.nav_bar_to_back{
+    animation: nav_bar_to_back_anim 1000ms !important;
+}
+.nav_bar{
+    animation: nav_bar_hidden_anim 500ms;
+    width: 170px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    z-index: 10;
+}
+.picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 25px 8px;
+    margin-bottom: 5px;
+    display: none;
+}
+@keyframes burger_btn_animation {
+    from{left: -100px;}
+    to{left: 10px}
+}
+#burger_btn{
+    animation: burger_btn_animation 1000ms;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: #111;
+    z-index: 9;
+    border-radius: 5px;
+    display: flex;
+}
+@keyframes burger_pressed_animation {
+    from{left: 10px; !important;}
+    to{left: 105px; !important;}
+}
+.burger_pressed{
+    animation: burger_pressed_animation 1000ms !important;
+}
+@keyframes burger_false_animation {
+    from{left: 105px;}
+    to{left: 10px;}
+}
+.burger_false{
+    animation: burger_false_animation 1000ms !important;
+}
+@keyframes burger_arrow_animation {
+    0%{opacity: 1}
+    50%{opacity: 0.1}
+    100%{opacity: 1}
+}
+@keyframes burger_arrow_deg_animation {
+    from{rotate: 0deg}
+    to{rotate: 180deg}
+}
+@keyframes burger_arrow_deg_back_animation {
+    from{rotate: 180deg}
+    to{rotate: 0deg}
+}
+.burger_arrow_deg_back{
+    animation: burger_arrow_deg_back_animation 1000ms !important;
+}
+.burger_arrow_deg{
+    animation: burger_arrow_deg_animation 1000ms !important;
+}
+#burger_arrow{
+    animation: burger_arrow_animation 1500ms infinite;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    filter: invert(1);
+}
+.nav_btns_box{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav_btn{
+    width: 100%;
+    padding: 0 20px;
+    font-size: 19px;
+    font-weight: bold;
+    background: transparent;
+    border: 0;
+    margin: 10px 0;
+    text-decoration: none;
+    font-family: 'Noto Sans Armenian','Open Sans','lucida grande',tahoma,arial,sans-serif !important;
+}
+.lable{
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+.text{
+    color: #999;
+    font-family: 'Noto Sans Armenian','Open Sans','lucida grande',tahoma,arial,sans-serif !important;
+}
+.sub_text{
+    color: #aaa
+}
+.visited_nav_btn{
+    color: #fff !important;
+}
+.d_flex{display: flex;}
+.m-0{margin: 0;}
+.nav_leng_box{
+    position: fixed;
+    bottom: 20px;
+}
+.main_box{
+    animation: main_box_hidden_animation 1000ms;
+    width: calc(100% - 170px);
+    margin-left: 170px;
+    position: relative;
+}
+
+
+/*Media*/
+@media screen and (max-width: 850px){
+    .nav_bar{
+        width: 100px;
+    }
+    .nav_bar h2{
+        font-size: 14px;
+    }
+    .nav_bar h4{
+        font-size: 10px;
+    }
+    .nav_btn{
+        font-size: 12px;
+        padding: 0 10px ;
+    }
+}
+
+@media screen and (max-width: 500px){
+    @keyframes nav_bar_hidden_anim {
+        0%{left: -100px}
+        50%{left: 0;}
+        100%{left: -100px;}
+    }
+    .nav_bar{
+        animation: nav_bar_hidden_anim 2000ms;
+        left: -100px;
+    }
+}

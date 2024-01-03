@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/services.css">
+    <title>Web Developer Services | Zhora Margaryan</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../static/js/services.js"></script>
+    <script src="../static/js/main.js"></script>
+</head>
+<body>
+    <div id="main_box">
+        <div id="burger_btn" onclick="burgerEvent(this)"><img src="../static/imgs/arrow.png" id="burger_arrow"></div>
+        <div class="nav_bar">
+            <img src="../static/imgs/picture.jpg" class="picture">
+            <h2 class="text lable">ZHORA MARGARYAN</h2>
+            <h4 class="text lable sub_text">WEB DEVELOPER</h4>
+            <div class="nav_btns_box">
+                <a href="../"  class="nav_btn text">MAIN</a>
+                <a href="../services/" class="nav_btn text visited_nav_btn">SERVICES</a>
+                <a href="../resume/" class="nav_btn text">RESUME</a>
+                <a href="../portfolio/" class="nav_btn text">PORTFOLIO</a>
+                <a href="../contacts/" class="nav_btn text">CONTACTS</a>
+            </div>
+            <div class="nav_leng_box">
+                <a href="../am/services/" class="text nav_btn">ՀԱՅ</a>
+                <a href="../ru/services/" class="text nav_btn">РУС</a>
+            </div>
+        </div>
+        <div class="main_box">
+            <div class="service_appeal_box">
+                <h2 class="services_text">Here you can see the services I provide and the prices.</h2>
+                <h3 class="services_text">Each project is created individually or on a turnkey basis. 
+                    The price depends on the size and complexity of the project.
+                    Projects will be created using Python and JavaScript languages and their libraries:
+                    (Server: Python/Django, Python/Flask, Python/FastAPI: depending on the requirements and size of the project)
+                    (Client side: JavaScript/jQuery, JavaScript/Vue.js, Python/Brython: optional)
+                </h3>
+                <h5 class="services_text">You can get acquainted with my services and prices below.</h5>
+                <div class="m-20">
+                    <h2 class="services_text">To order website development, contact me.</h2>
+                    <div class="d_flex">
+                        <button class="main_btns" onclick="window.location.href='../contacts/'">CONTACTS</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services_main_box">
+                <h1 class="main_title text">SERVICES</h1>
+
+                <div class="d_flex">
+                    <button class="main_btns m0auto" onclick="openNewWebsiteCreating(this)">NEW WEBSITE CREATENG</button>
+                    <button class="main_btns m0auto" onclick="open_other_services(this)">OTHER SERVICES</button>
+                </div>
+
+                <div id="website_types">
+                    <h3 class="text">Website types</h3>
+                
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">INDIVIDUAL WEBSITE</h2>
+                        <h4 class="text">
+                            Development of a website with individual functionality, a design that will fully meet your requirements.
+                        </h4>
+                        <h3 class="text">The price depends on the size and complexity of the project.</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+                    
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">LENDING PAGE</h2>
+                        <h4 class="text">
+                            A landing page is a standalone web page created specifically for a marketing or advertising campaign. 
+                            Unlike regular web pages, which typically have many goals and encourage exploration, landing pages are designed with a single focus or goal, known as a call to action (or CTA, for short).
+                            This focus makes landing pages the best option for increasing the conversion rates of your marketing campaigns and lowering your cost of acquiring a lead or sale.
+                        </h4>
+                        <h3 class="text">Price starting from: 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">PERSONAL WEBSITE</h2>
+                        <h4 class="text">
+                            A personal website is a site that is created and managed by an individual. 
+                            It can be used for a variety of purposes, such as presenting oneself or one's work, promoting one's services or products, sharing information and opinions, and communicating with others. 
+                            For example, the site you are currently on.
+                        </h4>
+                        <h3 class="text">Price starting from: 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">CORPORATE WEBSITE</h2>
+                        <h4 class="text">
+                            A corporate website is an online platform that represents a company. 
+                            It contains information about the company, its operations, and its offerings. 
+                            It’s designed to be visually appealing, easy to navigate, and contains quality content relevant to its audience. 
+                            It also includes calls to action to guide visitors. Overall, it helps a company establish credibility and enhance its online presence.
+                        </h4>
+                        <h3 class="text">Price starting from: 400 USD (200.000 AMD)</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">EDUCATIONAL RESOURCES WEBSITE</h2>
+                        <h4 class="text">
+                            Educational resources websites are online platforms that offer a variety of learning and teaching materials. 
+                            They can include lesson plans, online courses, games, and more. 
+                            These websites can be used by teachers for lesson planning and classroom management, and by students for self-study and revision. 
+                            Some of these websites offer free access to their resources, allowing users to adapt and redistribute the materials as needed.
+                        </h4>
+                        <h3 class="text">Price starting from: 800 USD (360.000 AMD)</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">WEB-PORTAL</h2>
+                        <h4 class="text">
+                            A web portal is a website that provides a single point of access to information from various sources. 
+                            Also, a web portal can contain a combination of several types of users and provide interaction between them.
+                        </h4>
+                        <h3 class="text">Price starting from: 1.000 USD (400.000 AMD)</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="other_services">
+                    <h3 class="text">Other services</h3>
+    
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">BUG FIXING OR ADDING NEW FUNCTIONALLY TO YOUR WEBSITE</h2>
+                        <h3 class="text">The price depends on the complexity of the tasks.</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+    
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ADDING A WEBSITE TO HOSTING OR SOLVING HOSTING PROBLEMS</h2>
+                        <h3 class="text">The price depends on the complexity of the tasks.</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">WEBSITE REDESIGN</h2>
+                        <h3 class="text">Price starting from: 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">To order, contact me.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">CONTACT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

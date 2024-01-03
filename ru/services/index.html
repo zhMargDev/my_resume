@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/services.css">
+    <title>Веб Разработчик Услуги | Жора Маргарян</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../static/js/services.js"></script>
+    <script src="../../static/js/main.js"></script>
+</head>
+<body>
+    <div id="main_box">
+        <div id="burger_btn" onclick="burgerEvent(this)"><img src="../../static/imgs/arrow.png" id="burger_arrow"></div>
+        <div class="nav_bar">
+            <img src="../../static/imgs/picture.jpg" class="picture">
+            <h2 class="text lable">ЖОРА МАРГАРЯН</h2>
+            <h4 class="text lable sub_text">ВЕБ РАЗРАБОТЧИК</h4>
+            <div class="nav_btns_box">
+                <a href="../"  class="nav_btn text">ГЛАВНАЯ</a>
+                <a href="../services/" class="nav_btn text visited_nav_btn">УСЛУГИ</a>
+                <a href="../resume/" class="nav_btn text">РЕЗЮМЕ</a>
+                <a href="../portfolio/" class="nav_btn text">ПОРТФОЛИО</a>
+                <a href="../contacts/" class="nav_btn text">КОНТАКТЫ</a>
+            </div>
+            <div class="nav_leng_box">
+                <a href="../../am/services/" class="text nav_btn">ՀԱՅ</a>
+                <a href="../../services/" class="text nav_btn">ENG</a>
+            </div>
+        </div>
+        <div class="main_box">
+            <div class="service_appeal_box">
+                <h2 class="services_text">Здесь вы можете ознакомиться с услугами, которые я предоставляю, и их ценами.</h2>
+                <h3 class="services_text">Каждый проект создается индивидуально или под ключ.
+                    Цена зависит от размера и сложности проекта.
+                    Проекты будут создаваться с использованием Python и JavaScript языков и их библиотек:
+                    (Сервер: Python/Django, Python/Flask, Python/FastAPI: в зависимости от требований и размера проекта)
+                    (Клиентская часть: JavaScript/jQuery, JavaScript/Vue.js, Python/Brython: по желанию).
+                </h3>
+                <h5 class="services_text">Ознакомиться с моими услугами и ценами вы можете ниже.</h5>
+                <div class="m-20">
+                    <h2 class="services_text">Чтобы заказать разработку сайта, свяжитесь со мной.</h2>
+                    <div class="d_flex">
+                        <button class="main_btns" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services_main_box">
+                <h1 class="main_title text">СЕРВИСЫ</h1>
+
+                <div class="d_flex">
+                    <button class="main_btns m0auto" onclick="openNewWebsiteCreating(this)">РАЗРАБОТКА НОВЫХ САЙТОВ</button>
+                    <button class="main_btns m0auto" onclick="open_other_services(this)">ДРУГИЕ УСЛУГИ</button>
+                </div>
+
+                <div id="website_types">
+                    <h3 class="text">Тип веб-сайтов</h3>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ИНДИВИДУАЛЬНЫЙ САЙТ</h2>
+                        <h4 class="text">
+                            Разработка сайта с индивидуальным функционалом, дизайном, который будет полностью соответствовать вашим требованиям.
+                        </h4>
+                        <h3 class="text">Цена зависит от размера и сложности проекта.</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ЛЕНДИНГ СТРАНИЦА</h2>
+                        <h4 class="text">
+                            Лендинг страница — это отдельная веб-страница, созданная специально для маркетинговой или рекламной кампании.
+                            В отличие от обычных веб-страниц, которые, как правило, имеют множество целей и побуждают к исследованию, целевые страницы разрабатываются с одним фокусом или целью, известной как призыв к действию (или CTA, для краткости).
+                            Такой фокус делает целевые страницы лучшим вариантом для повышения коэффициента конверсии ваших маркетинговых кампаний и снижения затрат на привлечение продаж.
+                        </h4>
+                        <h3 class="text">Цена начиная от: 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ПЕРСОНАЛЬНЫЙ САЙТ</h2>
+                        <h4 class="text">
+                            Персональный сайт — это сайт, который создается и управляется физическим лицом.
+                            Его можно использовать для различных целей, таких как презентация себя или своей работы, продвижение своих услуг или продуктов, обмен информацией и мнениями, а также общение с другими людьми.
+                            Например, сайт, на котором вы сейчас находитесь.
+                        </h4>
+                        <h3 class="text">Цена начиная от: 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">КОРПОРАТИВНЫЙ САЙТ</h2>
+                        <h4 class="text">
+                            Корпоративный сайт — это онлайн-платформа, которая представляет компанию.
+                            Он содержит информацию о компании, ее деятельности и предложениях.
+                            Он разработан так, чтобы быть визуально привлекательным, простым в навигации и содержать качественный контент, актуальный для его аудитории.
+                            Он также включает в себя призывы к действию, чтобы направлять посетителей. В целом, это помогает компании завоевать доверие и усилить свое присутствие в Интернете.
+                        </h4>
+                        <h3 class="text">Цена начиная с: 400 USD (200.000 AMD)</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ОБРАЗОВАТЕЛЬНЫЕ РЕСУРСЫ</h2>
+                        <h4 class="text">
+                            Веб-сайты образовательных ресурсов — это онлайн-платформы, которые предлагают различные учебные и методические материалы.
+                            Они могут включать в себя планы уроков, онлайн-курсы, игры и многое другое.
+                            Эти веб-сайты могут использоваться учителями для планирования уроков и управления классом, а учащимися — для самостоятельного изучения и повторения.
+                            Некоторые из этих веб-сайтов предлагают бесплатный доступ к своим ресурсам, позволяя пользователям адаптировать и распространять материалы по мере необходимости.
+                        </h4>
+                        <h3 class="text">Цена начиная от: 800 USD (360.000 AMD)</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ВЕБ-ПОРТАЛ</h2>
+                        <h4 class="text">
+                            Веб-портал – это веб-сайт, предоставляющий единую точку доступа к информации из различных источников.
+                            Также веб-портал может содержать комбинацию нескольких типов пользователей и обеспечивать взаимодействие между ними.
+                        </h4>
+                        <h3 class="text">Цена начиная от: 1.000 USD (400.000 AMD)</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="other_services">
+                    <h3 class="text">Другие услуги</h3>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ИСПРАВЛЕНИЕ ОШИБОК ИЛИ ДОБАВЛЕНИЕ НОВОГО ФУНКЦИОНАЛА НА ВАШ САЙТ</h2>
+                        <h3 class="text">Цена зависит от сложности поставленных задач.</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ДОБАВЛЕНИЕ САЙТА НА ХОСТИНГ ИЛИ РЕШЕНИЕ ПРОБЛЕМ С ХОСТИНГОМ</h2>
+                        <h3 class="text">Цена зависит от сложности поставленных задач.</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">РЕДИЗАЙН САЙТА</h2>
+                        <h3 class="text">Цена начиная от: 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">Для заказа свяжитесь со мной.</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">КОНТАКТЫ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

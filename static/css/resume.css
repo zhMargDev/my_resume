@@ -1,0 +1,123 @@
+.resume_box{
+    margin: 20px;
+}
+.m-0{margin: 0 !important}
+.info_box{
+    width: auto;
+    margin: 10px 0;
+    border: 5px solid #aaa;
+    padding: 30px;
+}
+a{text-decoration: none}
+.text{color: #999}
+
+.info_lable_text{
+    color: #222;
+    padding: 10px 35px;
+    margin-bottom: 0;
+    background-color: #999;
+    font-weight: 1000;
+    background: linear-gradient(124deg, #aaa 0%, #aaa 49%, #0000 50%, #0000 100%);
+}
+.dgrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.mauto{
+    margin: auto;
+}
+
+#third_box, #second_box, #forth_box{
+    display: none;
+}
+
+@keyframes box_hidden_animation {
+    from{left: 100vw;}
+    to{left: 0vw;}
+}
+.box_hidden_animation{
+    display: block !important;
+    animation: box_hidden_animation 1000ms;
+    position: relative;
+    left: 0;
+}
+.main_btns{
+    animation: main_btns_hover_anim_reverse 250ms;
+    padding: 10px;
+    border: 5px solid darkgray;
+    background: transparent;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 1000;
+    cursor: pointer;
+    margin: 15px auto;
+    font-family: 'Noto Sans Armenian','Open Sans','lucida grande',tahoma,arial,sans-serif !important;
+}
+@keyframes main_btns_hover_anim_reverse{
+    from{
+        color: #111;
+        border: 5px solid #111;
+        background-color: #aaa;
+    }
+    to{
+        color: #aaa;
+        border: 5px solid darkgray;
+        background: transparent;
+    }
+}
+@keyframes main_btns_hover_anim{
+    from{
+        color: #aaa;
+        border: 5px solid darkgray;
+        background: transparent;
+    }
+    to{
+        color: #111;
+        border: 5px solid #111;
+        background-color: #aaa;
+    }
+}
+.main_btns:hover{
+    animation: main_btns_hover_anim 250ms;
+    color: #111;
+    border: 5px solid #111;
+    background-color: #aaa;
+}
+
+/*Media*/
+@media screen and (max-width: 850px){
+    .main_box{
+        width: calc(100% - 100px);
+        margin-left: 100px;
+    }
+    .info_lable_text {
+        padding: 5px 15px;
+        font-size: 16px;
+        background: linear-gradient(124deg, #aaa 0%, #aaa 69%, #0000 70%, #0000 100%);
+    }
+    h1{
+        font-size: 25px;
+    }
+    .dgrid2{
+        grid-template-columns: 1fr;
+    }
+    .info_box{
+        padding: 15px;
+    }
+    .info_box div h3{
+        font-size: 15px;
+    }
+    .info_box div h2{
+        font-size: 17px;
+    }
+    .main_btns{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 500px){
+     .main_box {
+        width: 100%;
+        margin-left: 0;
+      }
+}

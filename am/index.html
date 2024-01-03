@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Վեբ ծրագրավորող Գլխավոր | Ժորա Մարգարյան</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../static/js/main.js"></script>
+</head>
+<body>
+    <div id="main_box">
+        <div id="burger_btn" onclick="burgerEvent(this)"><img src="../static/imgs/arrow.png" id="burger_arrow"></div>
+        <div class="nav_bar">
+            <img src="../static/imgs/picture.jpg" class="picture">
+            <h2 class="text lable">ԺՈՐԱ ՄԱՐԳԱՐՅԱՆ</h2>
+            <h4 class="text lable sub_text">ՎԵԲ ԾՐԱԳՐԱՎՈՐՈՂ</h4>
+            <div class="nav_btns_box">
+                <a href="./"  class="nav_btn text visited_nav_btn">ԳԼԽԱՎՈՐ</a>
+                <a href="./services/" class="nav_btn text">ԾԱՌԱՅՈՒԹ․</a>
+                <a href="./resume/" class="nav_btn text">ՌԵԶՅՈՒՄԵ</a>
+                <a href="./portfolio/" class="nav_btn text">ՊՈՐՏՖՈԼԻՈ</a>
+                <a href="./contacts/" class="nav_btn text">ԿՈՆՏԱԿՏՆԵՐ</a>
+            </div>
+            <div class="nav_leng_box">
+                <a href="../" class="text nav_btn">ENG</a>
+                <a href="../ru/" class="text nav_btn">РУС</a>
+            </div>
+        </div>
+        <div class="main_box">
+            <div class="appeal_box">
+                <h1 class="main_title text">ԲԱՐև ՁԵԶ</h1>
+                <h3 class="text sub_appeal">Ես Մարգարյան Ժորն եմ, վեբ ծրագրավորող Հայաստանից։ Ես ունեմ միջին ծրագրավորման փորձ և զբաղվում եմ վեբ կայքերի կառուցման և փոփոխման ծառոյությունների մատուցումով։</h3>
+
+                <h3 class="text sub_appeal m-0">Այս կայքում դուք կարող եք իմանալ իմ և իմ աշխատանքների մասին։ Դուք նաև կարող եք պատվիրել վեբ կայք։ Հարցերի դեպքում կապնվեք ինձ հետ։</h3>
+                <div class="d_flex">
+                    <button class="main_btns" onclick="window.location.href='./resume/'">ՌԵԶՅՈՒՄԵ</button>
+                    <button class="main_btns" onclick="window.location.href='./portfolio/'">ՊՈՐՏՖՈԼԻՈ</button>
+                    <button class="main_btns" onclick="window.location.href='./services/'">ԾԱՐԱՅՈՒԹՅՈՒՆՆԵՐ</button>
+                    <button class="main_btns" onclick="window.location.href='./contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

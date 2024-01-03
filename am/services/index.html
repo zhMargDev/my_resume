@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/services.css">
+    <title>Վեբ ծրագրավորող Ծառայություններ | Ժորա Մարգարյան</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../static/js/services.js"></script>
+    <script src="../../static/js/main.js"></script>
+</head>
+<body>
+    <div id="main_box">
+        <div id="burger_btn" onclick="burgerEvent(this)"><img src="../../static/imgs/arrow.png" id="burger_arrow"></div>
+        <div class="nav_bar">
+            <img src="../../static/imgs/picture.jpg" class="picture">
+            <h2 class="text lable">ԺՈՐԱ ՄԱՐԳԱՐՅԱՆ</h2>
+            <h4 class="text lable sub_text">ՎԵԲ ԾՐԱԳՐԱՎՈՐՈՂ</h4>
+            <div class="nav_btns_box">
+                <a href="../"  class="nav_btn text">ԳԼԽԱՎՈՐ</a>
+                <a href="../services/" class="nav_btn text visited_nav_btn">ԾԱՌԱՅՈՒԹ․</a>
+                <a href="../resume/" class="nav_btn text">ՌԵԶՅՈՒՄԵ</a>
+                <a href="../portfolio/" class="nav_btn text">ՊՈՐՏՖՈԼԻՈ</a>
+                <a href="../contacts/" class="nav_btn text">ԿՈՆՏԱԿՏՆԵՐ</a>
+            </div>
+            <div class="nav_leng_box">
+                <a href="../../services/" class="text nav_btn">ENG</a>
+                <a href="../../ru/services/" class="text nav_btn">РУС</a>
+            </div>
+        </div>
+        <div class="main_box">
+            <div class="service_appeal_box">
+                <h2 class="services_text">Այստեղ դուք կարող եք ծանոթանալ իմ կողմից տրամադրվող ծառայությունների և գների հետ։</h2>
+                <h3 class="services_text">Յուրաքանչյուր կայք կառուցվում է ինդիվիդուալ կամ ըստ բանալիի։
+                    Գինը կախված է նախագծի չափսերից և դժվարությունից։
+                    Նախագծերը կստեղծվեն Python և JavaScript լեզուներով և դրանց գրադարաններով.
+                    (Սերվեր՝ Python/Django, Python/Flask, Python/FastAPI՝ կախված նախագծի պահանջներից և չափից)
+                    (Հաճախորդի կողմը՝ JavaScript/jQuery, JavaScript/Vue.js, Python/Brython՝ ըստ ցանկության)
+                </h3>
+                <h5 class="services_text">Իմ կողմից տրամադրվող կառայությունների և գների հետ կարող եք ծանոթանալ ստորին մասում։</h5>
+                <div class="m-20">
+                    <h2 class="services_text">Ծառայություներից որևիցէ մեկը պատվիրելու համար կապնվեք ինձ հետ։</h2>
+                    <div class="d_flex">
+                        <button class="main_btns" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services_main_box">
+                <h1 class="main_title text">ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</h1>
+
+                <div class="d_flex">
+                    <button class="main_btns m0auto" onclick="openNewWebsiteCreating(this)">ՆՈՐ ԿԱՅՔԵՐԻ ԿԱՌՈՒՑՈՒՄ</button>
+                    <button class="main_btns m0auto" onclick="open_other_services(this)">ԱՅԼ ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</button>
+                </div>
+
+                <div id="website_types">
+                    <h3 class="text">Վեբ կայքերի տեսակները</h3>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ԻՆԴԻՎԻԴՈՒԱԼ ՎԵԲԿԱՅՔ</h2>
+                        <h4 class="text">
+                            Անհատական ֆունկցիոնալով և դիզայնով կայքի մշակում, որը լիովին կհամապատասխանի ձեր պահանջներին:
+                        </h4>
+                        <h3 class="text">Գինը կախված է նախագծի չափսից և բարդությունից։</h3>
+                        <h5 class="text">Պատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ԼԵՆԴԻՆԳ ԷՋ</h2>
+                        <h4 class="text">
+                            Լենդինգ էջը առանձին վեբ կայքի էջ է, որը ստեղծվում է հատուկ պրոդուկտի մարքեթինգի կամ գովազդի համար:
+                            Ի տարբերություն սովորական վեբ կայքերի էջերի, որոնք հակված են ունենալ բազմաթիվ նպատակներ, լենդինգ էջը նախագծվում է այցելուի ուշադրությունը կենտրոնացնելու մեկ պրոդուկտի վրա։
+                            Այս կենտրոնացումը լենդինգ էջերը դարձնում է լավագույն տարբերակը ձեր մարքեթինգային արշավների փոխակերպման տոկոսադրույքը բարձրացնելու և վաճառքի ձեռքբերման ծախսերը նվազեցնելու համար:
+                        </h4>
+                        <h3 class="text">Գինը՝ սկսած 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">Պատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ԱՆՁՆԱԿԱՆ ԿԱՅՔ</h2>
+                        <h4 class="text">
+                            Անձնական կայքը վեբկայք է, որը ստեղծվում և կառավարվում է անհատի կողմից:
+                            Այն կարող է օգտագործվել տարբեր նպատակներով, ինչպիսիք են՝ ներկայացնելու ձեզ կամ ձեր աշխատանքը, գովազդել ձեր ծառայությունները կամ ապրանքները և այլն:
+                            Օրինակ կայքը, որում դուք հիմա գտնվում եք։
+                        </h4>
+                        <h3 class="text">Գինը՝ սկսած 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">Պատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ԿՈՐՊՈՐԱՏԻՎ ԿԱՅՔ</h2>
+                        <h4 class="text">
+                            Կորպորատիվ կայքը առցանց հարթակ է, որը ներկայացնում է ընկերությանը:
+                            Այն պարունակում է տեղեկատվություն ընկերության, նրա գործունեության և առաջարկների մասին:
+                            Այն նախագծված է տեսողականորեն գրավիչ, հեշտ նավիգացիայի համար և պարունակի որակյալ բովանդակություն, որը համապատասխանում է իր աուդիտորիային:
+                            Այն նաև ներառում է գործողությունների կոչեր՝ այցելուներին ուղղորդելու համար: Ընդհանուր առմամբ, սա օգնում է ընկերությանը վստահություն ձեռք բերել և ամրապնդել իր առցանց ներկայությունը:
+                        </h4>
+                        <h3 class="text">Գինը՝ սկսած 400 USD (200.000 AMD)</h3>
+                        <h5 class="text">Պատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ԿՐԹԱԿԱՆ ՀԱՐԹԱԿ</h2>
+                        <h4 class="text">
+                            Կրթական հարթակները առաջարկում են տարբեր ուսումնական նյութեր:
+                            Դրանք կարող են ներառել դասերի պլաններ, առցանց դասընթացներ, խաղեր և այլն:
+                            Այս կայքերը կարող են օգտագործվել ուսուցիչների կողմից դասերի պլանավորման և դասասենյակի կառավարման համար, իսկ ուսանողները կարող են օգտագործել առցանց ուսման համար:
+                            Այս կայքերից ոմանք առաջարկում են անվճար մուտք դեպի իրենց ռեսուրսները՝ թույլ տալով օգտվողներին հարմարեցնել և բաշխել նյութերը ըստ անհրաժեշտության:
+                        </h4>
+                        <h3 class="text">Գինը՝ սկսած 800 USD (360.000 AMD)</h3>
+                        <h5 class="text">Պատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ՎԵԲ ՊՈՐՏԱԼ</h2>
+                        <h4 class="text">
+                            Վեբ պորտալը կայք է, որն ապահովում է տարբեր աղբյուրներից տեղեկատվության հասանելիություն մեկ կետում:
+                            Նաև վեբ պորտալը կարող է պարունակել մի քանի տեսակի օգտատերերի համադրություն և ապահովել նրանց միջև փոխգործակցությունը:
+                        </h4>
+                        <h3 class="text">Գինը՝ սկսած 1.000 USD (400.000 AMD)</h3>
+                        <h5 class="text">Պատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="other_services">
+                    <h3 class="text">Այլ ծառայություններ</h3>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ՍԽԱԼՆԵՐԻ ՈՒՂՂՈՒՄ ԿԱՄ ՆՈՐ ՖՈՒՆԿՑԻՈՆԱԼԻ ԱՎԵԼՑՈՒՄ ՁԵՐ ԿԱՅՔՈՒՄ</h2>
+                        <h3 class="text">Գինը կախված է նախագծի չափսից և բարդությունից։</h3>
+                        <h5 class="text">ատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ՀՈՍՏԻՆԳՈՒՄ ԿԱՅՔԻ ԱՎԵԼԱՑՈՒՄ ԿԱՄ ՀՈՍՏԻՆԳԻ ՀԵՏ ԿԱՊՎԱԾ ԽՆԴԻՐՆԵՐԻ ԼՈՒԾՈՒՄ</h2>
+                        <h3 class="text">Գինը կախված է նախագծի չափսից և բարդությունից։</h3>
+                        <h5 class="text">ատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+
+                    <div class="services_box mt20">
+                        <h2 class="text m-0">ԿԱՅՔԻ ԴԻԶԱՅՆԻ ՓՈՓՈԽՈՒՄ</h2>
+                        <h3 class="text">Գինը՝ սկսած 100 USD (40.000 AMD)</h3>
+                        <h5 class="text">ատվիրելու համար կապնվեք ինձ հետ։</h5>
+                        <div class="d_flex">
+                            <button class="main_btns m0auto" onclick="window.location.href='../contacts/'">ԿՈՆՏԱԿՏՆԵՐ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

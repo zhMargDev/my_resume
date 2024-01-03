@@ -1,0 +1,53 @@
+@keyframes main_box_hidden_animation {
+    from{left: -100vw;}
+    to{left: 0vw;}
+}
+.contacts_box{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 530px;
+}
+.contact_btn{
+    text-decoration: none;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.sub_apeal{
+    font-size: 13px;
+    color: #777;
+    margin: 10px 5px;
+}
+.mb15{margin-bottom: 15px;}
+
+
+/*Media*/
+@media screen and (max-width: 850px){
+    .main_box{
+        width: calc(100% - 100px);
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .contacts_box{
+        left: 10px;
+        transform: none;
+        width: 401px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .contact_btn{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px){
+     .main_box {
+        width: 100%;
+        margin-left: 0;
+      }
+}
