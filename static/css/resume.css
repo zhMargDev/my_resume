@@ -5,19 +5,19 @@
 .info_box{
     width: auto;
     margin: 10px 0;
-    border: 5px solid #aaa;
+    border: 5px solid #405d3d;
     padding: 30px;
 }
 a{text-decoration: none}
 .text{color: #999}
 
 .info_lable_text{
-    color: #222;
+    color: #aaa;
     padding: 10px 35px;
     margin-bottom: 0;
     background-color: #999;
     font-weight: 1000;
-    background: linear-gradient(124deg, #aaa 0%, #aaa 49%, #0000 50%, #0000 100%);
+    background: linear-gradient(124deg, #405d3d 0%, #405d3d 49%, #0000 50%, #0000 100%);
 }
 .dgrid2{
     display: grid;
@@ -45,7 +45,7 @@ a{text-decoration: none}
 .main_btns{
     animation: main_btns_hover_anim_reverse 250ms;
     padding: 10px;
-    border: 5px solid darkgray;
+    border: 5px solid #405d3d;
     background: transparent;
     color: #aaa;
     font-size: 16px;
@@ -56,33 +56,28 @@ a{text-decoration: none}
 }
 @keyframes main_btns_hover_anim_reverse{
     from{
-        color: #111;
-        border: 5px solid #111;
-        background-color: #aaa;
+        border: 5px solid #405d3d;
+        background-color: #405d3d;
     }
     to{
-        color: #aaa;
-        border: 5px solid darkgray;
+        border: 5px solid #405d3d;
         background: transparent;
     }
 }
 @keyframes main_btns_hover_anim{
     from{
-        color: #aaa;
-        border: 5px solid darkgray;
+        border: 5px solid #405d3d;
         background: transparent;
     }
     to{
-        color: #111;
-        border: 5px solid #111;
-        background-color: #aaa;
+        border: 5px solid #405d3d;
+        background-color: #405d3d;
     }
 }
 .main_btns:hover{
     animation: main_btns_hover_anim 250ms;
-    color: #111;
-    border: 5px solid #111;
-    background-color: #aaa;
+    border: 5px solid #405d3d;
+    background-color: #405d3d;
 }
 
 /*Media*/
@@ -94,7 +89,7 @@ a{text-decoration: none}
     .info_lable_text {
         padding: 5px 15px;
         font-size: 16px;
-        background: linear-gradient(124deg, #aaa 0%, #aaa 69%, #0000 70%, #0000 100%);
+        background: linear-gradient(124deg, #405d3d 0%, #405d3d 69%, #0000 70%, #0000 100%);
     }
     h1{
         font-size: 25px;

@@ -22,8 +22,6 @@
 }
 .project_box{
     animation: project_box_hidden_animation 1200ms;
-    padding: 10px;
-    border:  5px solid #aaa;
     width: 90%;
     margin: 20px auto;
     position: relative;
@@ -32,9 +30,11 @@
 .project_picture{
     width: 100%;
     margin: 0;
+    border-radius: 5px;
 }
 .dark_fon{
     animation: dark_fon_animation_reverse 300ms;
+    border-radius: 5px;
     position: absolute;
     left: 0;
     top: 0;
@@ -78,7 +78,7 @@
     left: 50%;
     transform: translate(-50%);
     text-decoration: none;
-    color: #bbb;
+    color: #888;
     font-weight: bold;
     filter: brightness(1.3);
     opacity: 1;

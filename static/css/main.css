@@ -19,7 +19,7 @@
 .main_btns{
     animation: main_btns_hover_anim_reverse 250ms;
     padding: 10px;
-    border: 5px solid darkgray;
+    border: 5px solid #405d3d;
     background: transparent;
     color: #aaa;
     font-size: 16px;
@@ -30,33 +30,28 @@
 }
 @keyframes main_btns_hover_anim_reverse{
     from{
-        color: #111;
-        border: 5px solid #111;
-        background-color: #aaa;
+        border: 5px solid #405d3d;
+        background: #405d3d;
     }
     to{
-        color: #aaa;
-        border: 5px solid darkgray;
+        border: 5px solid #405d3d;
         background: transparent;
     }
 }
 @keyframes main_btns_hover_anim{
     from{
-        color: #aaa;
-        border: 5px solid darkgray;
+        border: 5px solid #405d3d;
         background: transparent;
     }
     to{
-        color: #111;
-        border: 5px solid #111;
-        background-color: #aaa;
+        border: 5px solid #405d3d;
+        background: #405d3d;
     }
 }
 .main_btns:hover{
     animation: main_btns_hover_anim 250ms;
-    color: #111;
-    border: 5px solid #111;
-    background-color: #aaa;
+    border: 5px solid #405d3d;
+    background: #405d3d;
 }
 
 /*Media*/
